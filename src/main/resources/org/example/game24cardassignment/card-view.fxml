@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="522.0" prefWidth="999.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.game24cardassignment.CardController">
+   <children>
+      <Button fx:id="verify24" layoutX="500.0" layoutY="32.0" mnemonicParsing="false" onAction="#onVerifyClick" prefHeight="26.0" prefWidth="112.0" text="Verify" textFill="#24135f">
+         <font>
+            <Font name="DejaVu Sans Bold" size="23.0" />
+         </font>
+      </Button>
+      <Button fx:id="refreshCards" layoutX="846.0" layoutY="32.0" mnemonicParsing="false" text="Refresh" textFill="#a71930">
+         <font>
+            <Font name="DejaVu Sans Bold" size="23.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="Card1" fitHeight="323.0" fitWidth="222.0" layoutX="14.0" layoutY="137.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@png/2_of_clubs.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="Card2" fitHeight="323.0" fitWidth="222.0" layoutX="264.0" layoutY="137.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@png/5_of_hearts.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="Card3" fitHeight="323.0" fitWidth="222.0" layoutX="516.0" layoutY="137.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@png/7_of_hearts.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="Card4" fitHeight="323.0" fitWidth="222.0" layoutX="763.0" layoutY="137.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@png/9_of_clubs.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="enterExpression" layoutX="284.0" layoutY="40.0" />
+      <Text layoutX="53.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter an expression:">
+         <font>
+            <Font name="DejaVu Sans Bold" size="19.0" />
+         </font>
+      </Text>
+      <Label fx:id="verifyText" layoutX="660.0" layoutY="44.0" />
+   </children>
+</AnchorPane>
